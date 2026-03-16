@@ -11,6 +11,11 @@ jobs:
     steps:
       - name: Say Hello
         run: echo "Hello, World!"
+      - name: tworze pliki
+        run: |
+          touch plik1.txt
+          touch plik2.txt
+          touch plik3.txt
   echo-goodbye:
     runs-on: ubuntu-latest
     steps:
