@@ -27,4 +27,4 @@ jobs:
       - name: Show OS
         run: |
           echo "This job is running on a MacOS runner."
-          echo "OS: $(uname -a)"
+          echo "$RUNNER_OS"
