@@ -13,8 +13,8 @@ jobs:
           echo "This job is running on an Ubuntu runner."
           echo "OS: $(uname -a)"
 
-  ubuntu-echo-var:
-    runs-on: ubuntu-latest
+  ubuntu-echo-var-selfhosted:
+    runs-on: tf-ucz-marcin-skoczek-gha-gh
     steps:
       - name: Show OS
         run: |
@@ -37,7 +37,7 @@ jobs:
         run: |
           echo "This job is running on a Windows runner."
           echo "$RUNNER_OS"  
-            
+
   mac-echo:
     runs-on: macos-latest
     steps:
