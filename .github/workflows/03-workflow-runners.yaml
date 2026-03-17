@@ -14,7 +14,7 @@ jobs:
           echo "OS: $(uname -a)"
 
   ubuntu-echo-var-selfhosted:
-    runs-on: tf-ucz-marcin-skoczek-gha-gh
+    runs-on: selfhosted
     steps:
       - name: Show OS
         run: |
